@@ -1,21 +1,34 @@
+import LandingPage from "pages/landing-page";
 import React from "react";
-import "./App.css";
-import logo from "./logo.svg";
+import { createGlobalStyle } from "styled-components";
+import { HashRouter, Route, Routes } from "../node_modules/react-router-dom/index";
 
-function App() {
+const GlobalStyles = createGlobalStyle`
+	html, body {
+		margin: 0;
+		padding: 0;
+		font-family: "Chakra Petch", "Roboto", sans-serif;
+
+		color: ${({ theme }) => theme.colors.surface.contrast};
+		background-color: ${({ theme }) => theme.colors.surface.background};
+	}
+	
+	body, input, textarea, button {
+		font-family: "Chakra Petch", "Roboto", sans-serif;
+	}
+`;
+
+const App = () => {
 	return (
-		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
-				</p>
-				<a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-					Learn React
-				</a>
-			</header>
-		</div>
+		<>
+			<GlobalStyles />
+			<HashRouter>
+				<Routes>
+					<Route index element={<LandingPage />} />
+				</Routes>
+			</HashRouter>
+		</>
 	);
-}
+};
 
 export default App;
