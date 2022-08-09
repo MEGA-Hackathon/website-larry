@@ -23,13 +23,18 @@ const StyledSwiperCard = styled.div`
 	overflow: hidden;
 	user-select: none;
 	background-color: ${({ theme }) => theme.colors.surface.elevations[0]};
+	${({ theme }) => (theme.shadows ? theme.shadows[0] : "")};
 `;
 const Header = styled.h1`
 	font-size: 30px;
 	text-align: center;
+	margin-bottom: 0px;
 `;
-const Section = styled.section`
+const SponsorSection = styled.section`
 	margin-top: 25px;
+`;
+const ParnerSection = styled.section`
+	margin-top: -10px;
 `;
 
 const Sponsors = () => {
@@ -39,7 +44,7 @@ const Sponsors = () => {
 	const lg = Theme.breakpoints.lg;
 	const xl = Theme.breakpoints.xl;
 	return (
-		<Section>
+		<SponsorSection>
 			<Header>Sponsors</Header>
 			<Swiper
 				breakpoints={{
@@ -55,7 +60,7 @@ const Sponsors = () => {
 						slidesPerView: 4.5,
 					},
 				}}
-				style={{ marginLeft: "10%", marginRight: "10%" }}
+				style={{ marginLeft: "10%", marginRight: "10%", paddingTop: "5px", paddingBottom: "40px" }}
 				spaceBetween={25}
 				centeredSlides={true}
 				pagination={{
@@ -88,15 +93,15 @@ const Sponsors = () => {
 					<StyledSwiperCard>Hello</StyledSwiperCard>
 				</SwiperSlide>
 			</Swiper>
-		</Section>
+		</SponsorSection>
 	);
 };
 
 const Partners = () => {
 	return (
-		<Section>
+		<ParnerSection>
 			<Header>Partners NGOs & Schools</Header>
-		</Section>
+		</ParnerSection>
 	);
 };
 
