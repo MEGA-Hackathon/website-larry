@@ -54,7 +54,7 @@ export const StyledNavigations = styled.div`
 	}
 `;
 
-export const StyledNavBrand = styled.div`
+export const StyledNavBrand = styled(Link)`
 	flex: 1;
 	display: flex;
 	margin-left: 0px;
@@ -65,6 +65,9 @@ export const StyledNavBrand = styled.div`
 	font-size: large;
 	font-weight: 600;
 	cursor: pointer;
+
+	color: ${({ theme }) => theme.colors.surface.contrast};
+	text-decoration: none;
 
 	> * {
 		margin-top: auto;

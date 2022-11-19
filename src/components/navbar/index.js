@@ -13,14 +13,14 @@ const Navbar = () => {
 	const Icon = theme == "light" ? DarkThemeToggle : LightThemeToggle;
 	return (
 		<StyledNav isScrolled={isScrolled}>
-			<StyledNavBrand>
+			<StyledNavBrand to={"/"}>
 				<CustomLogo isScrolled={isScrolled} />
 				<div>MEGA Hackathon</div>
 			</StyledNavBrand>
 			<StyledNavigations>
-				{PageLinks.map((link, index) => (
-					<NavLink to={link} key={index}>
-						{PageNames[index]}
+				{PageNames.map((name, index) => (
+					<NavLink to={PageLinks[name]} key={index}>
+						{name}
 					</NavLink>
 				))}
 				<Icon size={20} onClick={() => dispatch(setTheme(theme == "light" ? "dark" : "light"))} />

@@ -1,7 +1,12 @@
+import Navbar from "components/navbar";
 import React from "react";
 
-const Page = () => {
-	return <></>;
+const ContactsPage = () => {
+	return (
+		<>
+			<Navbar />
+		</>
+	);
 };
 
-export default Page;
+export default ContactsPage;
