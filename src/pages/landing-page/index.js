@@ -5,14 +5,14 @@ import LandingNavbar from "./components/Navbar";
 import Popups from "./components/Popups";
 
 const LandingPage = () => {
-	return (
-		<>
-			<LandingNavbar />
-			<Header />
-			<Popups />
-			<Credits />
-		</>
-	);
+    return (
+        <>
+            <LandingNavbar />
+            <Header />
+            <Popups />
+            <Credits />
+        </>
+    );
 };
 
 export default LandingPage;
