@@ -51,8 +51,11 @@ const Header = () => {
                 <div>
                     <PrimaryButton
                         style={{ marginRight: "10px", borderRadius: 100 }}
+                        onClick={() => {
+                            window.location.href = "/events";
+                        }}
                     >
-                        Register
+                        View Events & Register
                     </PrimaryButton>
                     {/* <TextButton
                         onClick={() => {
