@@ -207,7 +207,9 @@ const Sponsors = () => {
                             style={{
                                 backgroundColor: "white",
                                 color: "black",
+                                height: 150,
                                 width: 200,
+                                borderRadius: 25,
                             }}
                         >
                             <StyledCardImage
@@ -271,6 +273,7 @@ const Partners = () => {
                                 color: "black",
                                 height: 150,
                                 width: 200,
+                                borderRadius: 25,
                             }}
                         >
                             <StyledCardImage
