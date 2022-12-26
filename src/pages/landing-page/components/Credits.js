@@ -42,10 +42,6 @@ const sponsorList = [
         name: "Shaws 4 Shelters",
         image: "https://cdn.discordapp.com/attachments/915828251279122482/1056587438912450601/image.png",
     },
-    // {
-    //     name: "Rosenfeld Media",
-    //     image: "https://cdn.discordapp.com/attachments/915828251279122482/1056587495699136523/image.png",
-    // },
     {
         name: "IchDen",
         image: "https://cdn.discordapp.com/attachments/915828251279122482/1056596681052925993/image.png",
@@ -145,10 +141,10 @@ const partnersList = [
         name: "Hun School of Princeton",
         image: "https://upload.wikimedia.org/wikipedia/en/2/24/Hun_School_of_Princeton_Logo.jpg",
     },
-    {
-        name: "Riverdale",
-        image: "https://megahack.tech/static/media/rosenfeld.e0593a0139f834dd25e0.png",
-    },
+    // {
+    //     name: "Riverdale",
+    //     image: "https://megahack.tech/static/media/rosenfeld.e0593a0139f834dd25e0.png",
+    // },
     {
         name: "Lawrenceville",
         image: "https://upload.wikimedia.org/wikipedia/en/c/cd/Lawrenceville_School_seal.png",
@@ -206,9 +202,18 @@ const Sponsors = () => {
                 modules={[Pagination]}
             >
                 {sponsorList.map((sponsor) => (
-                    <SwiperSlide key={sponsor.name}>
-                        <StyledSwiperCard>
-                            <StyledCardImage src={sponsor.image} />
+                    <SwiperSlide key={sponsor.name} style={{ height: 125 }}>
+                        <StyledSwiperCard
+                            style={{
+                                backgroundColor: "white",
+                                color: "black",
+                                width: 200,
+                            }}
+                        >
+                            <StyledCardImage
+                                src={sponsor.image}
+                                style={{ objectFit: "contain" }}
+                            />
                             <StyledCardBody>
                                 <StyledCardHeader>
                                     {sponsor.name}
@@ -260,8 +265,18 @@ const Partners = () => {
             >
                 {partnersList.map((sponsor) => (
                     <SwiperSlide key={sponsor.name}>
-                        <StyledSwiperCard>
-                            <StyledCardImage src={sponsor.image} />
+                        <StyledSwiperCard
+                            style={{
+                                backgroundColor: "white",
+                                color: "black",
+                                height: 150,
+                                width: 200,
+                            }}
+                        >
+                            <StyledCardImage
+                                src={sponsor.image}
+                                style={{ objectFit: "contain" }}
+                            />
                             <StyledCardBody>
                                 <StyledCardHeader>
                                     {sponsor.name}
