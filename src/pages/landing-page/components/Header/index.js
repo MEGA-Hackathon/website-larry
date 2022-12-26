@@ -52,7 +52,7 @@ const Header = () => {
                     <PrimaryButton
                         style={{ marginRight: "10px", borderRadius: 100 }}
                         onClick={() => {
-                            window.location.href = "/events";
+                            window.location.href = "website/#/events";
                         }}
                     >
                         View Events & Register
