@@ -1,7 +1,7 @@
 {
     "name": "website",
     "version": "0.1.0",
-    "homepage": "https://MEGA-Hackathon.github.io/website",
+    "homepage": "https://megahack.tech/",
     "private": true,
     "dependencies": {
         "@fontsource/chakra-petch": "^4.5.7",

@@ -76,8 +76,7 @@ const Popups = () => {
                                         borderRadius: 100,
                                     }}
                                     onClick={() => {
-                                        window.location.href =
-                                            "/website/class.html";
+                                        window.location.href = "/class.html";
                                     }}
                                 >
                                     Register
