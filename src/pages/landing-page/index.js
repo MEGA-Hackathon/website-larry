@@ -6,15 +6,15 @@ import LandingNavbar from "./components/Navbar";
 import Popups from "./components/Popups";
 
 const LandingPage = () => {
-    return (
-        <>
-            <LandingNavbar />
-            <Header />
-            <Events />
-            <Popups />
-            <Credits />
-        </>
-    );
+	return (
+		<>
+			<LandingNavbar />
+			<Header />
+			<Events />
+			<Popups />
+			<Credits />
+		</>
+	);
 };
 
 export default LandingPage;
