@@ -74,8 +74,6 @@ const GalleryView = () => {
                     },
                 }}
                 style={{
-                    marginLeft: "10%",
-                    marginRight: "10%",
                     paddingTop: "5px",
                     paddingBottom: "40px",
                 }}
@@ -87,7 +85,7 @@ const GalleryView = () => {
                 modules={[Pagination]}
             >
                 {galleryImages.map((sponsor) => (
-                    <SwiperSlide key={sponsor} style={{}}>
+                    <SwiperSlide key={sponsor}>
                         <StyledSwiperCard
                             style={{
                                 backgroundColor: "white",

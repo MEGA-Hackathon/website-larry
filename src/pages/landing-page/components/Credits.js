@@ -177,21 +177,19 @@ const Sponsors = () => {
             <br />
             <Swiper
                 breakpoints={{
-                    [0]: { slidesPerView: 1.25 },
-                    [sm]: { slidesPerView: 1.75 },
+                    [0]: { slidesPerView: 2 },
+                    [sm]: { slidesPerView: 2 },
                     [md]: {
                         slidesPerView: 2,
                     },
                     [lg]: {
-                        slidesPerView: 4,
+                        slidesPerView: 2,
                     },
                     [xl]: {
-                        slidesPerView: 4.5,
+                        slidesPerView: 2,
                     },
                 }}
                 style={{
-                    marginLeft: "10%",
-                    marginRight: "10%",
                     paddingTop: "5px",
                     paddingBottom: "40px",
                 }}
@@ -203,7 +201,11 @@ const Sponsors = () => {
                 modules={[Pagination]}
             >
                 {sponsorList.map((sponsor) => (
-                    <SwiperSlide key={sponsor.name} style={{}}>
+                    <SwiperSlide
+                        initialSlide={3}
+                        key={sponsor.name}
+                        style={{ maxWidth: 300, maxHeight: 300 }}
+                    >
                         <StyledSwiperCard
                             style={{
                                 backgroundColor: "white",
@@ -248,21 +250,19 @@ const Partners = () => {
             <br />
             <Swiper
                 breakpoints={{
-                    [0]: { slidesPerView: 1.25 },
-                    [sm]: { slidesPerView: 1.75 },
+                    [0]: { slidesPerView: 2 },
+                    [sm]: { slidesPerView: 2 },
                     [md]: {
                         slidesPerView: 2,
                     },
                     [lg]: {
-                        slidesPerView: 4,
+                        slidesPerView: 2,
                     },
                     [xl]: {
-                        slidesPerView: 4.5,
+                        slidesPerView: 2,
                     },
                 }}
                 style={{
-                    marginLeft: "10%",
-                    marginRight: "10%",
                     paddingTop: "5px",
                     paddingBottom: "40px",
                 }}
@@ -274,7 +274,10 @@ const Partners = () => {
                 modules={[Pagination]}
             >
                 {partnersList.map((sponsor) => (
-                    <SwiperSlide key={sponsor.name}>
+                    <SwiperSlide
+                        key={sponsor.name}
+                        style={{ maxWidth: 300, maxHeight: 300 }}
+                    >
                         <StyledSwiperCard
                             style={{
                                 backgroundColor: "white",
