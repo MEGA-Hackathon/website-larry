@@ -1,7 +1,4 @@
 {
-	"files.eol": "\n",
-	"editor.tabSize": 4,
-	"editor.detectIndentation": false,
 	"eslint.run": "onType",
 	"eslint.format.enable": true,
 	"editor.formatOnSave": true,
@@ -9,4 +6,5 @@
 		"source.fixAll": true,
 		"source.organizeImports": true
 	},
+	"files.eol": "\r\n",
 }

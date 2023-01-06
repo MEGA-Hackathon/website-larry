@@ -1,6 +1,5 @@
-export const PageNames = ["Home", "Events", "Contact"];
+export const PageNames = ["Home", "Contact"];
 export const PageLinks = {
-	Home: "/",
-	Events: "/events",
-	Contact: "/contact",
+    Home: "/",
+    Contact: "/contact",
 };
