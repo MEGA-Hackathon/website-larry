@@ -80,8 +80,8 @@ const Popups = () => {
 						</Areas.Community>
 						<Areas.Network>
 							<StyledPopup>
-								<StyledHeader>April 1 2023</StyledHeader>
-								<b style={{ color: "#000" }}>MEGA Hackathon 2023</b>
+								<StyledHeader>MEGA Hackathon 2023</StyledHeader>
+								<b style={{ color: "#000" }}>April 1 2023</b>
 
 								<StyledBody>
 									{`Like last year, MEGA Hackathon will host another Hackathon event in 2023 to address real-world problems.`}
@@ -90,8 +90,8 @@ const Popups = () => {
 						</Areas.Network>
 						<Areas.Mega>
 							<StyledPopup>
-								<StyledHeader>{`COMPLETED`}</StyledHeader>
-								<b style={{ color: "#000" }}>MEGA Hackathon 2022</b>
+								<StyledHeader>{`MEGA Hackathon 2022`}</StyledHeader>
+								<b style={{ color: "#000" }}>COMPLETED</b>
 
 								<StyledBody>
 									{`We had over 200+ registration, 40+ NGOs and Partners and over 10,000 in cash funding and 50,000 in awards sponsorships. The event was a blast!`}
