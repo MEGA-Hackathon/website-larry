@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const StyledCardHeader = styled.h3`
     margin: 0px 0px 0.1rem 0px;
+    font-size: 12px;
 `;
 const StyledCardBody = styled.div`
     width: fill-available;
@@ -70,7 +71,7 @@ const sponsorList = [
         image: "https://cdn.discordapp.com/attachments/915828251279122482/1056596311593463919/image.png",
     },
     {
-        name: "GNEC",
+        name: "Global NGO Executive Committee",
         image: "https://cdn.discordapp.com/attachments/915828251279122482/1056590619927126116/image.png",
     },
     {
