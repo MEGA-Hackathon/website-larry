@@ -23,7 +23,6 @@ const StyledSwiperCard = styled.div`
     overflow: hidden;
     user-select: none;
     background-color: ${({ theme }) => theme.colors.surface.elevations[0]};
-    ${({ theme }) => (theme.shadows ? theme.shadows[0] : "")};
 `;
 const Header = styled.h1`
     font-size: 30px;
@@ -61,16 +60,16 @@ const GalleryView = () => {
             <br />
             <Swiper
                 breakpoints={{
-                    [0]: { slidesPerView: 1.25 },
-                    [sm]: { slidesPerView: 1.25 },
+                    [0]: { slidesPerView: 2 },
+                    [sm]: { slidesPerView: 2 },
                     [md]: {
-                        slidesPerView: 1.25,
+                        slidesPerView: 2,
                     },
                     [lg]: {
-                        slidesPerView: 1.25,
+                        slidesPerView: 2,
                     },
                     [xl]: {
-                        slidesPerView: 1.25,
+                        slidesPerView: 2,
                     },
                 }}
                 style={{

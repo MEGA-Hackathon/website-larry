@@ -23,7 +23,6 @@ const StyledSwiperCard = styled.div`
     overflow: hidden;
     user-select: none;
     background-color: ${({ theme }) => theme.colors.surface.elevations[0]};
-    ${({ theme }) => (theme.shadows ? theme.shadows[0] : "")};
 `;
 const Header = styled.h1`
     font-size: 30px;
@@ -71,7 +70,7 @@ const sponsorList = [
         image: "https://cdn.discordapp.com/attachments/915828251279122482/1056596311593463919/image.png",
     },
     {
-        name: "Global NGO Executive Committee",
+        name: "GNEC",
         image: "https://cdn.discordapp.com/attachments/915828251279122482/1056590619927126116/image.png",
     },
     {
@@ -204,7 +203,7 @@ const Sponsors = () => {
                     <SwiperSlide
                         initialSlide={3}
                         key={sponsor.name}
-                        style={{ maxWidth: 300, maxHeight: 300 }}
+                        style={{ maxWidth: 200, maxHeight: 200 }}
                     >
                         <StyledSwiperCard
                             style={{
@@ -276,7 +275,7 @@ const Partners = () => {
                 {partnersList.map((sponsor) => (
                     <SwiperSlide
                         key={sponsor.name}
-                        style={{ maxWidth: 300, maxHeight: 300 }}
+                        style={{ maxWidth: 200, maxHeight: 200 }}
                     >
                         <StyledSwiperCard
                             style={{
