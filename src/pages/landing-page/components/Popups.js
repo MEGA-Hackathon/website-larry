@@ -52,7 +52,7 @@ const Popups = () => {
                     <>
                         <Areas.Community>
                             <StyledPopup>
-                                <StyledCommunityIcon size={iconSize} />
+                                {/* <StyledCommunityIcon size={iconSize} /> */}
                                 <StyledHeader>
                                     A Motivated, Driven Community
                                 </StyledHeader>
@@ -63,7 +63,7 @@ const Popups = () => {
                         </Areas.Community>
                         <Areas.Network>
                             <StyledPopup>
-                                <StyledNetworkIcon size={iconSize} />
+                                {/* <StyledNetworkIcon size={iconSize} /> */}
                                 <StyledHeader>
                                     Knowledge Network & Connections
                                 </StyledHeader>
@@ -74,7 +74,7 @@ const Popups = () => {
                         </Areas.Network>
                         <Areas.Mega>
                             <StyledPopup>
-                                <StyledMegaIcon size={iconSize} />
+                                {/* <StyledMegaIcon size={iconSize} /> */}
                                 <StyledHeader>{`A Truly "MEGA" Hackathon`}</StyledHeader>
                                 <StyledBody>
                                     {`Our Hackathon is truly MEGA. Last season, we had 200+ attendees from 20+ different countries, 40+ NGOs and Partners who donated over 10k USD in funding and 50k in awards, sponsorships and internships that changed lives.`}

@@ -8,10 +8,27 @@ const ContactsPage = () => {
             <center>
                 <h1>Contacts</h1>
                 <h1>Contacts</h1>
-                <a href="https://www.instagram.com/megahack2022/">Instagram</a>
-                <a href="https://discord.gg/WQnppYbKrh">Discord</a>
                 <br />
-                <a href="mailto:info@megahack.tech">
+                <a
+                    style={{ textDecoration: "none" }}
+                    href="https://www.instagram.com/megahack2022/"
+                >
+                    Instagram
+                </a>
+                <br />
+                <br />
+                <a
+                    style={{ textDecoration: "none" }}
+                    href="https://discord.gg/WQnppYbKrh"
+                >
+                    Discord Server
+                </a>
+                <br />
+                <br />
+                <a
+                    style={{ textDecoration: "none" }}
+                    href="mailto:info@megahack.tech"
+                >
                     Email (info@megahack.tech)
                 </a>
             </center>
