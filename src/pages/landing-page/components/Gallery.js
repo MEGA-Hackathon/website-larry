@@ -37,7 +37,7 @@ const ParnerSection = styled.section`
 `;
 
 const galleryImages = [
-    "https://media.discordapp.net/attachments/959222968054087680/960237934999654520/IMG_0187_2.JPG",
+    // "https://media.discordapp.net/attachments/959222968054087680/960237934999654520/IMG_0187_2.JPG",
     "https://media.discordapp.net/attachments/959222968054087680/960124929276248124/5FDA9FDD-EA53-4FBB-B902-C9ED183533C7.jpg",
     "https://media.discordapp.net/attachments/959222968054087680/960124976151810088/IMG_2370.jpg",
     "https://media.discordapp.net/attachments/959222968054087680/960125004836663336/IMG_2374.jpg",
