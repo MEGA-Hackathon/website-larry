@@ -11,7 +11,7 @@ const ContactsPage = () => {
                 <br />
                 <a
                     style={{ textDecoration: "none" }}
-                    href="https://www.instagram.com/megahack2022/"
+                    href="https://www.instagram.com/megahackathon/"
                 >
                     Instagram
                 </a>
