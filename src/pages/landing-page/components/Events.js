@@ -46,6 +46,7 @@ const StyledMegaIcon = styled(IconSchool)`
 
 const Popups = () => {
     const iconSize = 75;
+
     return (
         <>
             <center id="events">
@@ -55,36 +56,46 @@ const Popups = () => {
                 {(Areas) => (
                     <>
                         <Areas.Community>
-                            <StyledPopup>
-                                <StyledHeader>
-                                    Digital Storytelling for Social Good with AI
-                                    Class
-                                </StyledHeader>
-                                <b style={{ color: "gray" }}>
-                                    Feburary - April
-                                </b>
+                            {/* keep this section until feburary 17th 11:59:59 EST */}
+                            {new Date().getTime() <
+                                new Date("2023-02-18T04:59:59Z").getTime() && (
+                                // new Date("2023-02-16T1:59:59Z").getTime() && (
+                                <StyledPopup>
+                                    <StyledHeader>
+                                        Digital Storytelling for Social Good
+                                        with AI Class
+                                    </StyledHeader>
+                                    <b style={{ color: "gray" }}>
+                                        Feburary - April
+                                    </b>
 
-                                <StyledBody>
-                                    {`MEGA is teaming up with Columbia PHD students and Professors at Love and Future to educate the youth on the importance of Digital Storytelling and how it can be used to solve real world problems.`}
-                                </StyledBody>
+                                    <StyledBody>
+                                        {`MEGA is teaming up with Columbia PHD students and Professors at Love and Future to educate the youth on the importance of Digital Storytelling and how it can be used to solve real world problems.`}
+                                    </StyledBody>
 
-                                <PrimaryButton
-                                    style={{
-                                        marginRight: "10px",
-                                        borderRadius: 100,
-                                    }}
-                                    onClick={() => {
-                                        window.location.href = "/class.html";
-                                    }}
-                                >
-                                    Register
-                                </PrimaryButton>
+                                    <PrimaryButton
+                                        style={{
+                                            marginRight: "10px",
+                                            borderRadius: 100,
+                                        }}
+                                        onClick={() => {
+                                            window.location.href =
+                                                "/class.html";
+                                        }}
+                                    >
+                                        Register
+                                    </PrimaryButton>
 
-                                <br />
-                                <p style={{ color: "green" }}>
-                                    Registration Open Now - Feburary
-                                </p>
-                            </StyledPopup>
+                                    <br />
+                                    <p style={{ color: "green" }}>
+                                        Registration Open Now - Feburary 17th
+                                        11:59 EST
+                                    </p>
+                                    <p style={{ color: "red" }}>
+                                        REGISTER SOON!
+                                    </p>
+                                </StyledPopup>
+                            )}
                         </Areas.Community>
                         <Areas.Network>
                             <StyledPopup>
