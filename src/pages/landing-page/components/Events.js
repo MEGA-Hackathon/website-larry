@@ -57,8 +57,7 @@ const Popups = () => {
                     <>
                         <Areas.Community>
                             {/* keep this section until feburary 17th 11:59:59 EST */}
-                            {new Date().getTime() <
-                                new Date("2023-02-18T04:59:59Z").getTime() && (
+                            {true && (
                                 // new Date("2023-02-16T1:59:59Z").getTime() && (
                                 <StyledPopup>
                                     <StyledHeader>
@@ -87,12 +86,8 @@ const Popups = () => {
                                     </PrimaryButton>
 
                                     <br />
-                                    <p style={{ color: "green" }}>
-                                        Registration Open Now - Feburary 17th
-                                        11:59 EST
-                                    </p>
                                     <p style={{ color: "red" }}>
-                                        REGISTER SOON!
+                                        Late Registrations Open
                                     </p>
                                 </StyledPopup>
                             )}
