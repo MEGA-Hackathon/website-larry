@@ -61,8 +61,7 @@ const Popups = () => {
                                 // new Date("2023-02-16T1:59:59Z").getTime() && (
                                 <StyledPopup>
                                     <StyledHeader>
-                                        Digital Storytelling for Social Good
-                                        with AI Class
+                                        Digital Storytelling for Good Using AI
                                     </StyledHeader>
                                     <b style={{ color: "gray" }}>
                                         Feburary - April
